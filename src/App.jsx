@@ -4,6 +4,7 @@ import About from "./partials/About";
 import Card from "./partials/Card";
 import Footer from "./partials/Footer";
 import Projects from "./partials/Projects";
+import Experiences from "./partials/Experiences";
 import Skills from "./partials/Skills";
 import data from "./assets/data";
 import AOS from "aos";
@@ -23,6 +24,7 @@ function App() {
       <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
         <About title={data.about.title} description={data.about.description} />
         <Skills skills={data.skills} />
+        <Experiences experiences={data.experiences} />
         <Projects projects={data.projects} />
         <Footer github={data.social.github} />
       </div>

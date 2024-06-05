@@ -1,5 +1,5 @@
 import React from "react";
-import { FaAndroid } from "react-icons/fa";
+import { FaAndroid, FaDatabase } from "react-icons/fa";
 import { SiKotlin, SiFlutter, SiFirebase } from "react-icons/si";
 import { RiJavaLine } from "react-icons/ri";
 
@@ -37,9 +37,9 @@ const data = {
       ),
     },
     {
-      skillName: "Dart",
+      skillName: "Flutter",
       skillIcon: (
-        <SiFlutter className="text-4xl mx-auto inline-block text-blue-500" />
+        <SiFlutter className="text-4xl mx-auto inline-block text-blue-600" />
       ),
     },
     {
@@ -48,20 +48,56 @@ const data = {
         <SiFirebase className="text-4xl mx-auto inline-block text-orange-500" />
       ),
     },
+    {
+      skillName: "SQL",
+      skillIcon: (
+        <FaDatabase className="text-4xl mx-auto inline-block text-gray-800" />
+      ),
+    },
+  ],
+  experiences: [
+    {
+      id: 1,
+      title: "Premier Cement Mills PLC",
+      description: "Junior Software Engineer(Android)",
+      dates: "Jan 2024 - Present",
+    },
+
+    {
+      id: 2,
+      title: "EWN Bangladesh Limited",
+      description: "Junior Software Engineer(Android)",
+      dates: "Jan 2023 - Dec 2023",
+    },
   ],
   projects: [
     {
-      title: "React tailwind portfolio",
+      title: "Truck Bidder",
       description:
-        "👨‍🎨 An open-source portfolio template built with React and Tailwind.",
-      tags: ["template", "portfolio", "reactjs", "tailwindcss"],
-      link: "https://github.com/braydentw/react-tailwind-portfolio",
+        "🚚 Mobile application aimed at optimizing truck procurement processes for cement delivery, with a core focus on reducing company expenditures on truck rentals.",
+      tags: ["Kotlin", "AndroidX", "HILT", "REST API"],
+      link: "#",
     },
     {
-      title: "My personal website",
-      description: "⚡ My portfolio built with NextJS and TailwindCSS.",
-      tags: ["website", "portfolio", "nextjs", "tailwindcss"],
-      link: "https://github.com/braydentW/braydentw",
+      title: "Premier Sales App",
+      description:
+        "📝 A core application managing sales, marketing, goal setting, cash deposits, attendance, and leave tracking  for Premier Cement Mills PLC.",
+      tags: ["Kotlin", "Java", "Dagger", "AndroidX", "REST API"],
+      link: "#",
+    },
+    {
+      title: "SCAI",
+      description:
+        "🏢 An office management application, handling features such as attendance tracking, punch in/out, catering management, chats, and more.",
+      tags: ["Java", "Firebase", "AndroidX", "HILT"],
+      link: "#",
+    },
+    {
+      title: "PetPat",
+      description:
+        "🐶 Online multi-vendor ecommerce application exclusively for pet-related services and products.",
+      tags: ["Kotlin", "REST API", "AndroidX", "HILT"],
+      link: "#",
     },
   ],
 };

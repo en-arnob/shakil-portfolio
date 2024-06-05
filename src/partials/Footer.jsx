@@ -1,17 +1,24 @@
-import React from 'react'
-import GitHubButton from 'react-github-btn'
+import React from "react";
+import GitHubButton from "react-github-btn";
 
-function Footer({github}) {
+function Footer({ github }) {
   return (
     <div className="text-center w-full mt-16">
       <p className="text-gray-600 mb-4">
-        Made with <span role="img" aria-label="heart">💙</span> by <a className="text-blue-500 hover:underline" href="https://github.com/BraydenTW">Brayden W</a>
+        Made with{" "}
+        <span role="img" aria-label="heart">
+          💙
+        </span>{" "}
+        using{" "}
+        <span className="text-blue-500 hover:underline" href="/">
+          React
+        </span>
       </p>
-      <GitHubButton href={github+"/react-tailwind-portfolio"} data-color-scheme="no-preference: light; light: light; dark: light;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</GitHubButton>
-      &nbsp;&nbsp;
-      <GitHubButton href={github+"/react-tailwind-portfolio/fork"} data-color-scheme="no-preference: light; light: light; dark: light;" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork ntkme/github-buttons on GitHub">Fork</GitHubButton>
+      <p className="text-gray-600 ">© 2024, Shakil Ahmed</p>
+      <p className="text-gray-600">📞+880 1329-654810</p>
+      <p className="text-gray-600 mb-4">📧hridoyhussainshakil@gmail.com</p>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
